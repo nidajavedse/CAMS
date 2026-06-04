@@ -8,16 +8,16 @@ public class Account {
     private String accountType;
     private LocalDate dateOpened;
     private double balance;
-    private long customerId;
+    private Customer customer;
 
     public Account(long accountId, String accountNumber, String accountType,
-                   LocalDate dateOpened, double balance, long customerId) {
+                   LocalDate dateOpened, double balance, Customer customer) {
         this.accountId = accountId;
         this.accountNumber = accountNumber;
         this.accountType = accountType;
         this.dateOpened = dateOpened;
         this.balance = balance;
-        this.customerId = customerId;
+        this.customer = customer;
     }
 
     public long getAccountId() { return accountId; }
@@ -25,5 +25,5 @@ public class Account {
     public String getAccountType() { return accountType; }
     public LocalDate getDateOpened() { return dateOpened; }
     public double getBalance() { return balance; }
-    public long getCustomerId() { return customerId; }
+    public Customer getCustomerId() { return customer; }
 }

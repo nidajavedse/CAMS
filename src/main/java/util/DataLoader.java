@@ -16,16 +16,16 @@ public class DataLoader {
         Customer c3 = new Customer(3, "Carlos", "Jimenez");
 
         Account a1 = new Account(1, "AC1002", "Checking",
-                LocalDate.of(2016,5,17), 155900.50, 1);
+                LocalDate.of(2016,5,17), 155900.50, c1);
 
         Account a2 = new Account(2, "AS1001", "Savings",
-                LocalDate.of(2021,6,2), 12500.95, 1);
+                LocalDate.of(2021,6,2), 12500.95, c1);
 
         Account a3 = new Account(3, "AS1003", "Savings",
-                LocalDate.of(2016,7,11), 75000.00, 3);
+                LocalDate.of(2016,7,11), 75000.00, c3);
 
         Account a4 = new Account(4, "AC1004", "Checking",
-                LocalDate.of(2024,3,29), 11700.99, 2);
+                LocalDate.of(2024,3,29), 11700.99, c2);
 
         accRepo.saveAll(List.of(a1, a2, a3, a4));
         custRepo.saveAll(List.of(c1, c2, c3));
